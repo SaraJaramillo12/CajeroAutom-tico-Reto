@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero automatico</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cajero Electrónico</h1>
+        <div id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="documento" placeholder="Documento">
+            <input type="password" id="contraseña" placeholder="Contraseña">
+            <button onclick="iniciarSesion()">Iniciar Sesión</button>
+        </div>
+        <div id="admin-form" class="hidden">
+            <h2>Cargar Cajero</h2>
+            <input type="number" id="billetes100000" placeholder="Cantidad de billetes de 100,000">
+            <input type="number" id="billetes50000" placeholder="Cantidad de billetes de 50,000">
+            <input type="number" id="billetes20000" placeholder="Cantidad de billetes de 20,000">
+            <input type="number" id="billetes10000" placeholder="Cantidad de billetes de 10,000">
+            <input type="number" id="billetes5000" placeholder="Cantidad de billetes de 5,000">
+            <button onclick="cargarCajero()">Cargar</button>
+        </div>
+        <div id="cliente-form" class="hidden">
+            <h2>Retirar Dinero</h2>
+            <input type="number" id="cantidadRetiro" placeholder="Cantidad a retirar">
+            <button onclick="retirarDinero()">Retirar</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
